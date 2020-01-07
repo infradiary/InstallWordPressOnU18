@@ -1,0 +1,27 @@
+#!/bin/bash
+# Update OS (Ubuntu) 
+apt update && apt upgrade
+
+#install web server 
+apt install apache2
+systemctl status apache2
+systemctl status apache2
+
+
+#install database server
+apt install mariadb-server mariadb-client
+mysql_secure_installation
+
+mysql -u root -p
+CREATE DATABASE wordpress_db;
+CREATE USER 'wp_user'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON wordpress_db.* TO 'wp_user'@'localhost' IDENTIFIED BY 'password';
+
+#Install PHP
+sudo apt install php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip
+
+
+
+
+#Install wordpress
+ wget https://wordpress.org/latest.tar.gz
