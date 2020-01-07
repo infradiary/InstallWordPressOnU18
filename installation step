@@ -25,3 +25,4 @@ sudo apt install php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-in
 
 #Install wordpress
  wget https://wordpress.org/latest.tar.gz
+https://www.journaldev.com/24954/install-wordpress-on-ubuntu#
